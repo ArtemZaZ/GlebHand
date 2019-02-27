@@ -1,6 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import subprocess
 from xmlrpc.server import SimpleXMLRPCServer
-from Hand.config import *
+from config import *
 
 cmd = 'hostname -I | cut -d\' \' -f1'
 selfIP = subprocess.check_output(cmd, shell=True)     # получаем IP

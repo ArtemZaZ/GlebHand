@@ -1,5 +1,5 @@
 """ Конфигурация руки """
-from Hand.RPiPWM import *
+from RPiPWM import *
 
 IP = '173.1.0.78'   # ip адрес ПК
 PORT = 8000

@@ -1,8 +1,7 @@
 import xmlrpc.client
-import joystick
 from config import *
 import time
-from pynput.keyboard import Key, Listener
+from pynput.keyboard import Key, Listener, KeyCode
 import threading
 
 proxy = "http://" + IP + ':' + PORT
@@ -23,30 +22,39 @@ fingerKeyState5 = False
 
 
 def on_press(key):
-    print(key)
-    if key == '1':
-        ff1 = True
-    elif key == '2':
-        ff2 = True
-    elif key == '3':
-        ff3 = True
-    elif key == '4':
-        ff4 = True
-    elif key == '5':
-        ff5 = True
+    global fingerKeyState1
+    global fingerKeyState2
+    global fingerKeyState3
+    global fingerKeyState4
+    global fingerKeyState5
+    if key == KeyCode.from_char('1'):
+        fingerKeyState1 = True
+    elif key == KeyCode.from_char('2'):
+        fingerKeyState2 = True
+    elif key == KeyCode.from_char('3'):
+        fingerKeyState3 = True
+    elif key == KeyCode.from_char('4'):
+        fingerKeyState4 = True
+    elif key == KeyCode.from_char('5'):
+        fingerKeyState5 = True
 
 
 def on_release(key):
-    if key == '1':
-        ff1 = False
-    elif key == '2':
-        ff2 = False
-    elif key == '3':
-        ff3 = False
-    elif key == '4':
-        ff4 = False
-    elif key == '5':
-        ff5 = False
+    global fingerKeyState1
+    global fingerKeyState2
+    global fingerKeyState3
+    global fingerKeyState4
+    global fingerKeyState5
+    if key == KeyCode.from_char('1'):
+        fingerKeyState1 = False
+    elif key == KeyCode.from_char('2'):
+        fingerKeyState2 = False
+    elif key == KeyCode.from_char('3'):
+        fingerKeyState3 = False
+    elif key == KeyCode.from_char('4'):
+        fingerKeyState4 = False
+    elif key == KeyCode.from_char('5'):
+        fingerKeyState5 = False
     elif key == Key.esc:
         # Stop listener
         return False
@@ -102,7 +110,6 @@ while True:
     else:
         finger5 = finger5 - FINGER_SCALE_STEP
     finger5 = rerange(finger5)
-
     client.bendFinger(1, finger1)
     client.bendFinger(2, finger2)
     client.bendFinger(3, finger3)

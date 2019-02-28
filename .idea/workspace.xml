@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58de6065-0aa6-4d0e-b044-4f7fe284df06" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Hand/RPiPWM.py" afterPath="$PROJECT_DIR$/Hand/RPiPWM.py" />
+      <change beforePath="$PROJECT_DIR$/Hand/config.py" afterPath="$PROJECT_DIR$/Hand/config.py" />
+      <change beforePath="$PROJECT_DIR$/Hand/server.py" afterPath="$PROJECT_DIR$/Hand/server.py" />
+      <change beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
+      <change beforePath="$PROJECT_DIR$/eventmaster.py" afterPath="$PROJECT_DIR$/eventmaster.py" />
       <change beforePath="$PROJECT_DIR$/hand.py" afterPath="$PROJECT_DIR$/hand.py" />
+      <change beforePath="$PROJECT_DIR$/joystick.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,21 +46,11 @@
       <file leaf-file-name="hand.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="18">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="joystick.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/joystick.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="890">
-              <caret line="212" column="63" lean-forward="false" selection-start-line="212" selection-start-column="63" selection-end-line="212" selection-end-column="63" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -409,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="18">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
